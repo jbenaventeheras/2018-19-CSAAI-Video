@@ -2,13 +2,23 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Video 02</title>
+    <title>Realizador</title>
     <script src="video.js"></script>
   </head>
   <body onload="main();">
     <p>Prueba de video</p>
-    <video id="video1" autoplay loop muted></video>
-    <br>
-    <button type="button" id="play">VER VIDEO</button>
+
+    <!-- cargamos videos muteados con autoplay y tamños-->
+    <video id="video_1" autoplay  muted loop width="200" height="100">
+        <source src="https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente1.mp4" />
+    </video>
+    <video id="video_2" autoplay  muted loop width="200" height="100">
+        <source src="https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente2.mp4"/>
+    </video>
+    <video id="video_3" autoplay  muted loop width="200" height="100">
+        <source src="https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente3.mp4"/>
+    </video>
+
+
   </body>
 </html>

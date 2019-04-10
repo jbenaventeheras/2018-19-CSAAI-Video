@@ -3,11 +3,8 @@ function main()
   console.log("Video 02...")
 
   //-- Obtener el elemento de video
-  video1 = document.getElementById("video1")
+  video_1 = document.getElementById("video_1")
 
-  //-- Establecer el tamaño del vídeo
-  video1.width = 200;
-  video1.height= 100;
 
   //-- Boton de Play
   ver = document.getElementById('play')
