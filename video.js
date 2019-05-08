@@ -3,7 +3,6 @@ function main()
 
   //-- Obtener el elemento de video
   video_1 = document.getElementById("video_1")
-  video_1.src ="https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente1.mp4";
   video_2 = document.getElementById("video_2")
   video_3 = document.getElementById("video_3")
   video_in = document.getElementById("video_in");
@@ -57,7 +56,28 @@ function main()
  reset.onclick = () => {
     video_in.src  ="BarsAndTone.mp4";
   }
+//////////////////////
+var count = 0,
+      clk_time = [0,0,0],
+      count = 0,
+      actual = 1;
 
+  setInterval(function(){
+    clk_time[2]++;
+    count++;
+    if(clk_time[2] > 60) {
+
+        clk_time[2] = 0;
+        clk_time[1]++;
+    }
+    if(clk_time[1] > 60) {
+
+        clk_time[1] = 0;
+        clk_time[0]++;
+    }
+
+    clock.innerHTML = clk_time[0] + ":" + clk_time[1] + ":" + clk_time[2];
+  },1000);
 
 
 
